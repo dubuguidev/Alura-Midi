@@ -1,3 +1,7 @@
+/*
+    todas as partes se repetem, só mudam a ag tecla e a tag som .onclick
+*/
+
 function tocaSomBolinhadeGolf () {
     document.querySelector('#som_tecla_bolinhadegolf').play();
 }
