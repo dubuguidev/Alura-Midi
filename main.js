@@ -6,52 +6,54 @@ function tocaSomBolinhadeGolf () {
     document.querySelector('#som_tecla_bolinhadegolf').play();
 }
 
-document.querySelector('.tecla_bolinhadegolf').onclick = tocaSomBolinhadeGolf;
+document.querySelectorAll('.tecla');
 
-function tocaBrazino () {
-    document.querySelector('#som_tecla_brazino').play();
-}
+// document.querySelector('.tecla_bolinhadegolf').onclick = tocaSomBolinhadeGolf;
 
-document.querySelector('.tecla_brazino').onclick = tocaBrazino;
+// function tocaBrazino () {
+//     document.querySelector('#som_tecla_brazino').play();
+// }
 
-function tocaCatlaught () {
-    document.querySelector('#som_tecla_catlaught').play();
-}
+// document.querySelector('.tecla_brazino').onclick = tocaBrazino;
 
-document.querySelector('.tecla_catlaught').onclick = tocaCatlaught;
+// function tocaCatlaught () {
+//     document.querySelector('#som_tecla_catlaught').play();
+// }
 
-function tocaCatsad () {
-    document.querySelector('#som_tecla_catsad').play();
-}
+// document.querySelector('.tecla_catlaught').onclick = tocaCatlaught;
 
-document.querySelector('.tecla_catsad').onclick = tocaCatsad;
+// function tocaCatsad () {
+//     document.querySelector('#som_tecla_catsad').play();
+// }
 
-function tocaBuzina () {
-    document.querySelector('#som_tecla_dilera').play();
-}
+// document.querySelector('.tecla_catsad').onclick = tocaCatsad;
 
-document.querySelector('.tecla_dilera').onclick = tocaBuzina;
+// function tocaBuzina () {
+//     document.querySelector('#som_tecla_dilera').play();
+// }
 
-function tocaFazoL () {
-    document.querySelector('#som_tecla_fazoL').play();
-}
+// document.querySelector('.tecla_dilera').onclick = tocaBuzina;
 
-document.querySelector('.tecla_fazoL').onclick = tocaFazoL;
+// function tocaFazoL () {
+//     document.querySelector('#som_tecla_fazoL').play();
+// }
 
-function tocaOruam () {
-    document.querySelector('#som_tecla_oruam').play();
-}
+// document.querySelector('.tecla_fazoL').onclick = tocaFazoL;
 
-document.querySelector('.tecla_oruam').onclick = tocaOruam;
+// function tocaOruam () {
+//     document.querySelector('#som_tecla_oruam').play();
+// }
 
-function tocaTecnologia () {
-    document.querySelector('#som_tecla_tecnologia').play();
-}
+// document.querySelector('.tecla_oruam').onclick = tocaOruam;
 
-document.querySelector('.tecla_tecnologia').onclick = tocaTecnologia;
+// function tocaTecnologia () {
+//     document.querySelector('#som_tecla_tecnologia').play();
+// }
 
-function tocaXaropinho () {
-    document.querySelector('#som_tecla_xaropinho').play();
-}
+// document.querySelector('.tecla_tecnologia').onclick = tocaTecnologia;
 
-document.querySelector('.tecla_xaropinho').onclick = tocaXaropinho;
+// function tocaXaropinho () {
+//     document.querySelector('#som_tecla_xaropinho').play();
+// }
+
+// document.querySelector('.tecla_xaropinho').onclick = tocaXaropinho;
