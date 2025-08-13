@@ -1,59 +1,21 @@
-/*
-    todas as partes se repetem, só mudam a ag tecla e a tag som .onclick
-*/
-
-function tocaSomBolinhadeGolf () {
-    document.querySelector('#som_tecla_bolinhadegolf').play();
+function tocaSom (idElementoAudio) {
+    document.querySelector(idElementoAudio).play();
 }
 
-document.querySelectorAll('.tecla');
+const listaDeTeclas = document.querySelectorAll('.tecla');
 
-// document.querySelector('.tecla_bolinhadegolf').onclick = tocaSomBolinhadeGolf;
+// para
+for(let contador = 0; contador < listaDeTeclas.length; contador ++) {
 
-// function tocaBrazino () {
-//     document.querySelector('#som_tecla_brazino').play();
-// }
+    const tecla = listaDeTeclas[contador];
+    const instrumento = tecla.classList[1];
+    // template string abaixo:
+    const idAudio = `#som_${instrumento}`;
 
-// document.querySelector('.tecla_brazino').onclick = tocaBrazino;
-
-// function tocaCatlaught () {
-//     document.querySelector('#som_tecla_catlaught').play();
-// }
-
-// document.querySelector('.tecla_catlaught').onclick = tocaCatlaught;
-
-// function tocaCatsad () {
-//     document.querySelector('#som_tecla_catsad').play();
-// }
-
-// document.querySelector('.tecla_catsad').onclick = tocaCatsad;
-
-// function tocaBuzina () {
-//     document.querySelector('#som_tecla_dilera').play();
-// }
-
-// document.querySelector('.tecla_dilera').onclick = tocaBuzina;
-
-// function tocaFazoL () {
-//     document.querySelector('#som_tecla_fazoL').play();
-// }
-
-// document.querySelector('.tecla_fazoL').onclick = tocaFazoL;
-
-// function tocaOruam () {
-//     document.querySelector('#som_tecla_oruam').play();
-// }
-
-// document.querySelector('.tecla_oruam').onclick = tocaOruam;
-
-// function tocaTecnologia () {
-//     document.querySelector('#som_tecla_tecnologia').play();
-// }
-
-// document.querySelector('.tecla_tecnologia').onclick = tocaTecnologia;
-
-// function tocaXaropinho () {
-//     document.querySelector('#som_tecla_xaropinho').play();
-// }
-
-// document.querySelector('.tecla_xaropinho').onclick = tocaXaropinho;
+    tecla.onclick = function(){
+        tocaSom(idAudio);
+    };
+    
+    // contador = contador + 1 trocado por contador++
+    // console.log(contador);
+}
