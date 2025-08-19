@@ -1,5 +1,18 @@
-function tocaSom (idElementoAudio) {
-    document.querySelector(idElementoAudio).play();
+function tocaSom (seletorAudio) {
+    const elemento = document.querySelector(seletorAudio);
+
+    if (elemento === null) {
+        alert('Element not found');
+    }
+
+    if (elemento != null) {
+
+       // console.log();
+
+        if(elemento.localName === 'audio'){
+            elemento.play();
+        }
+    }
 }
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
@@ -15,7 +28,28 @@ for(let contador = 0; contador < listaDeTeclas.length; contador ++) {
     tecla.onclick = function(){
         tocaSom(idAudio);
     };
+
+    tecla.onkeydown = function (evento){
+
+        if (evento.code === 'Space' || evento.code === 'Enter'){
+            tecla.classList.add('ativa');
+        }
+    }
+
+    tecla.onkeyup = function (){
+        tecla.classList.remove('ativa');
+    }
     
     // contador = contador + 1 trocado por contador++
     // console.log(contador);
 }
+
+// function entregaPacote(corDoPacote) {
+//     if (corDoPacote == 'vermelho') {
+//         mandaProCeara();
+//     }
+//     if (corDoPacote == 'azul'){
+//         mandaProRioDeJaneiro();
+//     }
+// }
+
